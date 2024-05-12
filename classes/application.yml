@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      username: root
+      password: example
+      host: localhost
+      port: 27017
+      database: mobile_app
+      authentication-database: admin
+
+  main:
+    allow-bean-definition-overriding: true
+
+  web:
+    resources:
+      static-locations[0]: "file:src/main/resources/static/"
+      static-locations[1]: "classpath:/static/"
+
+server:
+  port: 8080
+
+
+
